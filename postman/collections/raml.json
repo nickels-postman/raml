@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "ff58dfe8-c227-47dc-98b8-4ab116d72775",
+		"name": "raml",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "25998796-ff58dfe8-c227-47dc-98b8-4ab116d72775"
+	},
+	"item": [
+		{
+			"name": "/helloworld",
+			"id": "b6d6d71b-7764-4cc6-ab4b-30822491ffa4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/helloworld",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"helloworld"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e4e8085b-d9da-456d-9ad7-45fc1c1a84c1",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/helloworld",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"helloworld"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"message\": \"Hello world\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "6c0d297a-f28c-4a18-a890-6c4fbd7cd885",
+			"key": "baseUrl",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
